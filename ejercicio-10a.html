@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!–– Incluí una modificación al tamaño de la Text area final. Las dos preguntas de evaluación están hechas mediante distintos métodos -->
+  <html>
+  <body>
+<p>Buenos días. Gracias por comprar nuestro producto. Como nos interesa la opinión de nuestros clientes, te agradeceríamos si completaras esta sencilla encuesta de satisfacción. La encuesta es anónima. ¡Muchas gracias!</p>
+
+<form method="post" action="miservidor.php">
+     <div>
+       <label for=”codpost”>Código postal:</label>
+       <input id=”codpost” type=”number”>
+     </div>
+     <div>
+       <label for=”edad”>Edad:</label>
+       <input id=”edad” type=”number”>
+     </div>
+     <div>
+       <label for=”email”>Dirección de correo electrónico:</label>
+       <input id=”email” type=”text”>
+    </div>
+     <div>
+       <label for=”positivo”>¿Qué aspectos positivos señalarías del producto?:</label>
+       <input id=”positivo” type=”text”>
+    </div>
+     <div>
+       <label for=”negativo”>¿Y aspectos negativos?:</label>
+       <input id=”negativo” type=”text”>
+    </div>
+    <div>
+       <label for=”eval1”>¿Cómo evaluarías el diseño del paquete?:</label>
+       <select id=”eval1”>
+         <option value=”4”>Excelente</option>
+         <option value=”3”>Bueno</option>
+         <option value=”2”>Regular</option>
+         <option value=”1”>Pésimo</option>
+       </select>
+   </div>
+    <div>
+       <label for=”eval2”>¿Cómo evaluarías la variedad de sabores?:</label>
+         <input name=”eval2” type="radio" value="4">Excelente</input>
+         <input name=”eval2” type="radio" value=”3”>Buena</input>
+         <input name=”eval2” type="radio" value=”2”>Regular</input>
+         <input name=”eval2” type="radio" value=”1”>Pésima</input>
+   </div>
+   <div>
+     <label for=”comentario”>Comentario adicional:</label>
+     <textarea id=”comentario” style="width:300px; height:200px;"></textarea>
+   </div>
+   <input type=”submit” value=”Enviar”>
+</form>
+  </body>
+</html>
